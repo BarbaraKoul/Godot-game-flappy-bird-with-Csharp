@@ -1,0 +1,15 @@
+# Godot-specific ignores
+.godot/
+/android/
+*.translation
+
+# Mono / C# build outputs
+.vs/
+.idea/
+*.csproj.user
+bin/
+obj/
+
+# OS-generated files
+.DS_Store
+Thumbs.db

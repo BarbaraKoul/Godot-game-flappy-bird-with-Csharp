@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bwcvgt121y42k"]
+
+[ext_resource type="Script" uid="uid://ckb7h1gytklnp" path="res://GameOver.cs" id="1_xlotp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ky4b6"]
+load_path = "res://.godot/imported/restart.png-e3341f5ab3201ffaa3fc76965a1ab56e.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f0bnf"]
+texture = SubResource("CompressedTexture2D_ky4b6")
+
+[node name="GameOver" type="CanvasLayer" unique_id=644093]
+script = ExtResource("1_xlotp")
+
+[node name="RestartButton" type="Button" parent="." unique_id=1098950845]
+offset_left = 342.0
+offset_top = 350.0
+offset_right = 502.0
+offset_bottom = 413.0
+theme_override_styles/normal = SubResource("StyleBoxTexture_f0bnf")
+
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
